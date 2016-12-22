@@ -11,6 +11,14 @@
 		8F19F6D31E0C678D009F4002 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19F6D21E0C678D009F4002 /* ViewController.swift */; };
 		8F19F6D51E0C678D009F4002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F19F6D41E0C678D009F4002 /* Assets.xcassets */; };
 		8F19F6D81E0C678D009F4002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F19F6D61E0C678D009F4002 /* Main.storyboard */; };
+		8F1B029A1E0C6C45008211AC /* NSTouchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B02991E0C6C45008211AC /* NSTouchBarExtensions.swift */; };
+		8F1B029C1E0C6DD6008211AC /* StaticDataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B029B1E0C6DD6008211AC /* StaticDataProviders.swift */; };
+		8F1B029E1E0C773D008211AC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B029D1E0C773D008211AC /* ColorExtensions.swift */; };
+		8F1B02A11E0C796E008211AC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B02A01E0C796E008211AC /* GameScene.swift */; };
+		8F1B02A51E0C7E87008211AC /* Pikachu1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F1B02A31E0C7E87008211AC /* Pikachu1.mp3 */; };
+		8F1B02A61E0C7E87008211AC /* Pikachu2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F1B02A41E0C7E87008211AC /* Pikachu2.mp3 */; };
+		8F2DB48B1E0C6A8A00E099F8 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DB48A1E0C6A8A00E099F8 /* WindowController.swift */; };
+		8F2DB48D1E0C6AB000E099F8 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DB48C1E0C6AB000E099F8 /* Window.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		8F19F6D41E0C678D009F4002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F19F6D71E0C678D009F4002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F19F6D91E0C678D009F4002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1B02991E0C6C45008211AC /* NSTouchBarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTouchBarExtensions.swift; sourceTree = "<group>"; };
+		8F1B029B1E0C6DD6008211AC /* StaticDataProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticDataProviders.swift; sourceTree = "<group>"; };
+		8F1B029D1E0C773D008211AC /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		8F1B02A01E0C796E008211AC /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8F1B02A31E0C7E87008211AC /* Pikachu1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pikachu1.mp3; sourceTree = "<group>"; };
+		8F1B02A41E0C7E87008211AC /* Pikachu2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pikachu2.mp3; sourceTree = "<group>"; };
+		8F2DB48A1E0C6A8A00E099F8 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		8F2DB48C1E0C6AB000E099F8 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +69,68 @@
 			isa = PBXGroup;
 			children = (
 				8F19F6D01E0C678D009F4002 /* AppDelegate.swift */,
-				8F19F6D21E0C678D009F4002 /* ViewController.swift */,
+				8F2DB4891E0C697A00E099F8 /* Windows */,
+				8F1B029F1E0C7926008211AC /* Game */,
+				8F2DB48E1E0C6AFC00E099F8 /* Models */,
+				8F2DB48F1E0C6B0600E099F8 /* Extensions */,
+				8F2DB4901E0C6B2500E099F8 /* Providers */,
 				8F19F6D41E0C678D009F4002 /* Assets.xcassets */,
 				8F19F6D61E0C678D009F4002 /* Main.storyboard */,
 				8F19F6D91E0C678D009F4002 /* Info.plist */,
+				8F1B02A21E0C7E56008211AC /* Resources */,
 			);
 			path = "Pikachu-Bar-Runner";
+			sourceTree = "<group>";
+		};
+		8F1B029F1E0C7926008211AC /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				8F1B02A01E0C796E008211AC /* GameScene.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		8F1B02A21E0C7E56008211AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F1B02A31E0C7E87008211AC /* Pikachu1.mp3 */,
+				8F1B02A41E0C7E87008211AC /* Pikachu2.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F2DB4891E0C697A00E099F8 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				8F19F6D21E0C678D009F4002 /* ViewController.swift */,
+				8F2DB48A1E0C6A8A00E099F8 /* WindowController.swift */,
+				8F2DB48C1E0C6AB000E099F8 /* Window.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		8F2DB48E1E0C6AFC00E099F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F2DB48F1E0C6B0600E099F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F1B02991E0C6C45008211AC /* NSTouchBarExtensions.swift */,
+				8F1B029D1E0C773D008211AC /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F2DB4901E0C6B2500E099F8 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				8F1B029B1E0C6DD6008211AC /* StaticDataProviders.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F19F6D51E0C678D009F4002 /* Assets.xcassets in Resources */,
+				8F1B02A61E0C7E87008211AC /* Pikachu2.mp3 in Resources */,
+				8F1B02A51E0C7E87008211AC /* Pikachu1.mp3 in Resources */,
 				8F19F6D81E0C678D009F4002 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,8 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1B029C1E0C6DD6008211AC /* StaticDataProviders.swift in Sources */,
 				8F19F6D31E0C678D009F4002 /* ViewController.swift in Sources */,
+				8F1B02A11E0C796E008211AC /* GameScene.swift in Sources */,
+				8F2DB48B1E0C6A8A00E099F8 /* WindowController.swift in Sources */,
 				8F19F6D11E0C678D009F4002 /* AppDelegate.swift in Sources */,
+				8F1B029A1E0C6C45008211AC /* NSTouchBarExtensions.swift in Sources */,
+				8F2DB48D1E0C6AB000E099F8 /* Window.swift in Sources */,
+				8F1B029E1E0C773D008211AC /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +330,7 @@
 				DEVELOPMENT_TEAM = 63ZVUM2RC3;
 				INFOPLIST_FILE = "Pikachu-Bar-Runner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Pikachu-Bar-Runner";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.pierreboudon.Pikachu-Bar-Runner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -264,7 +344,7 @@
 				DEVELOPMENT_TEAM = 63ZVUM2RC3;
 				INFOPLIST_FILE = "Pikachu-Bar-Runner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Pikachu-Bar-Runner";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.pierreboudon.Pikachu-Bar-Runner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -289,6 +369,7 @@
 				8F19F6DE1E0C678D009F4002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
