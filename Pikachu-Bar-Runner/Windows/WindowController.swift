@@ -100,6 +100,7 @@ extension WindowController: NSTouchBarDelegate {
         case NSTouchBarItemIdentifier.scoreLabel:
             let item = NSCustomTouchBarItem(identifier: identifier)
             item.view = NSTextField(labelWithString: "----")
+            item.view.bind("value", to: self, withKeyPath: #keyPath(score), options: nil)
             
             return item
             
@@ -125,7 +126,7 @@ extension WindowController {
             
             if let view: NSTextField = item?.view as? NSTextField {
                 self.score += 1
-                view.stringValue = "\(self.score)"
+                view.stringValue = self.getStringVersion(of: self.score)
             }
         } else {
             
@@ -191,6 +192,22 @@ extension WindowController: AVAudioPlayerDelegate {
             self.audioPlayer?.play()
         } catch {
             print("Impossible de créer le player audio.")
+        }
+    }
+}
+
+
+// MARK: - Extension for personal methods
+extension WindowController {
+    func getStringVersion(of score: Int) -> String {
+        if score < 10 {
+            return "000\(score)"
+        } else if score < 100 {
+            return "00\(score)"
+        } else if score < 1000 {
+            return "0\(score)"
+        } else {
+            return "\(score)"
         }
     }
 }

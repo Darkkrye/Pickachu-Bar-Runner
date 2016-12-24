@@ -14,4 +14,8 @@ class StaticDataProviders {
     static let playButtonNotification = Notification.Name("PlayButtonNotification")
     static let pauseButtonNotification = Notification.Name("PauseButtonNotification")
     static let replayButtonNotification = Notification.Name("ReplayButtonNotification")
+    
+    static let player: UInt32 = 0
+    static let ground: UInt32 = 1
+    static let obstacle: UInt32 = 2
 }

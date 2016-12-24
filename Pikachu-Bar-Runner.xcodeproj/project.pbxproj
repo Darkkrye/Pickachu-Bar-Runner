@@ -17,8 +17,14 @@
 		8F1B02A11E0C796E008211AC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B02A01E0C796E008211AC /* GameScene.swift */; };
 		8F1B02A51E0C7E87008211AC /* Pikachu1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F1B02A31E0C7E87008211AC /* Pikachu1.mp3 */; };
 		8F1B02A61E0C7E87008211AC /* Pikachu2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F1B02A41E0C7E87008211AC /* Pikachu2.mp3 */; };
+		8F1B02A81E0DCFE8008211AC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B02A71E0DCFE8008211AC /* Player.swift */; };
 		8F2DB48B1E0C6A8A00E099F8 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DB48A1E0C6A8A00E099F8 /* WindowController.swift */; };
 		8F2DB48D1E0C6AB000E099F8 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DB48C1E0C6AB000E099F8 /* Window.swift */; };
+		8F36D4651E0DD97D00F5FE12 /* BackgroundRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D4641E0DD97D00F5FE12 /* BackgroundRepeater.swift */; };
+		8F36D4671E0DDBF500F5FE12 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D4661E0DDBF500F5FE12 /* IntExtensions.swift */; };
+		8F36D4691E0DDC5A00F5FE12 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D4681E0DDC5A00F5FE12 /* DoubleExtensions.swift */; };
+		8F36D46B1E0DDCEF00F5FE12 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D46A1E0DDCEF00F5FE12 /* Ground.swift */; };
+		8F36D46F1E0E764F00F5FE12 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D46E1E0E764F00F5FE12 /* Obstacle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +40,14 @@
 		8F1B02A01E0C796E008211AC /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		8F1B02A31E0C7E87008211AC /* Pikachu1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pikachu1.mp3; sourceTree = "<group>"; };
 		8F1B02A41E0C7E87008211AC /* Pikachu2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pikachu2.mp3; sourceTree = "<group>"; };
+		8F1B02A71E0DCFE8008211AC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8F2DB48A1E0C6A8A00E099F8 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		8F2DB48C1E0C6AB000E099F8 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		8F36D4641E0DD97D00F5FE12 /* BackgroundRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundRepeater.swift; sourceTree = "<group>"; };
+		8F36D4661E0DDBF500F5FE12 /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		8F36D4681E0DDC5A00F5FE12 /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		8F36D46A1E0DDCEF00F5FE12 /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
+		8F36D46E1E0E764F00F5FE12 /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,10 @@
 		8F2DB48E1E0C6AFC00E099F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8F1B02A71E0DCFE8008211AC /* Player.swift */,
+				8F36D4641E0DD97D00F5FE12 /* BackgroundRepeater.swift */,
+				8F36D46A1E0DDCEF00F5FE12 /* Ground.swift */,
+				8F36D46E1E0E764F00F5FE12 /* Obstacle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +137,8 @@
 			children = (
 				8F1B02991E0C6C45008211AC /* NSTouchBarExtensions.swift */,
 				8F1B029D1E0C773D008211AC /* ColorExtensions.swift */,
+				8F36D4661E0DDBF500F5FE12 /* IntExtensions.swift */,
+				8F36D4681E0DDC5A00F5FE12 /* DoubleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,13 +225,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F36D46F1E0E764F00F5FE12 /* Obstacle.swift in Sources */,
 				8F1B029C1E0C6DD6008211AC /* StaticDataProviders.swift in Sources */,
+				8F36D4651E0DD97D00F5FE12 /* BackgroundRepeater.swift in Sources */,
 				8F19F6D31E0C678D009F4002 /* ViewController.swift in Sources */,
 				8F1B02A11E0C796E008211AC /* GameScene.swift in Sources */,
+				8F36D46B1E0DDCEF00F5FE12 /* Ground.swift in Sources */,
+				8F36D4691E0DDC5A00F5FE12 /* DoubleExtensions.swift in Sources */,
+				8F36D4671E0DDBF500F5FE12 /* IntExtensions.swift in Sources */,
 				8F2DB48B1E0C6A8A00E099F8 /* WindowController.swift in Sources */,
 				8F19F6D11E0C678D009F4002 /* AppDelegate.swift in Sources */,
 				8F1B029A1E0C6C45008211AC /* NSTouchBarExtensions.swift in Sources */,
 				8F2DB48D1E0C6AB000E099F8 /* Window.swift in Sources */,
+				8F1B02A81E0DCFE8008211AC /* Player.swift in Sources */,
 				8F1B029E1E0C773D008211AC /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

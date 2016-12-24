@@ -9,5 +9,9 @@
 import Cocoa
 
 class Window: NSWindow {
-
+    override func keyDown(with event: NSEvent) {
+        if event.keyCode == 49 {
+            NotificationCenter.default.post(name: StaticDataProviders.jumpNotification, object: nil)
+        }
+    }
 }
