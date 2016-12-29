@@ -9,11 +9,19 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    static let spaceKeyCode: UInt16 = 36
+    
+    var isFirstTime = true
+    
+    @IBOutlet weak var usernameTextField: NSTextField!
+    @IBOutlet weak var difficultySegmentedControl: NSSegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.usernameTextField.becomeFirstResponder()
     }
 
     override var representedObject: Any? {
@@ -21,7 +29,7 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
+    
+    @IBAction func usernameTextFieldAction(_ sender: Any) {
+    }
 }
-

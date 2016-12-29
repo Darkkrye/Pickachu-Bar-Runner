@@ -20,6 +20,8 @@
 		8F1B02A81E0DCFE8008211AC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B02A71E0DCFE8008211AC /* Player.swift */; };
 		8F2DB48B1E0C6A8A00E099F8 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DB48A1E0C6A8A00E099F8 /* WindowController.swift */; };
 		8F2DB48D1E0C6AB000E099F8 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DB48C1E0C6AB000E099F8 /* Window.swift */; };
+		8F3398531E15661400834098 /* Diglett.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3398521E15661400834098 /* Diglett.swift */; };
+		8F3398551E156B9000834098 /* Dugtrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3398541E156B9000834098 /* Dugtrio.swift */; };
 		8F36D4651E0DD97D00F5FE12 /* BackgroundRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D4641E0DD97D00F5FE12 /* BackgroundRepeater.swift */; };
 		8F36D4671E0DDBF500F5FE12 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D4661E0DDBF500F5FE12 /* IntExtensions.swift */; };
 		8F36D4691E0DDC5A00F5FE12 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F36D4681E0DDC5A00F5FE12 /* DoubleExtensions.swift */; };
@@ -43,6 +45,8 @@
 		8F1B02A71E0DCFE8008211AC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8F2DB48A1E0C6A8A00E099F8 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		8F2DB48C1E0C6AB000E099F8 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		8F3398521E15661400834098 /* Diglett.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diglett.swift; sourceTree = "<group>"; };
+		8F3398541E156B9000834098 /* Dugtrio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dugtrio.swift; sourceTree = "<group>"; };
 		8F36D4641E0DD97D00F5FE12 /* BackgroundRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundRepeater.swift; sourceTree = "<group>"; };
 		8F36D4661E0DDBF500F5FE12 /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		8F36D4681E0DDC5A00F5FE12 /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				8F36D4641E0DD97D00F5FE12 /* BackgroundRepeater.swift */,
 				8F36D46A1E0DDCEF00F5FE12 /* Ground.swift */,
 				8F36D46E1E0E764F00F5FE12 /* Obstacle.swift */,
+				8F3398521E15661400834098 /* Diglett.swift */,
+				8F3398541E156B9000834098 /* Dugtrio.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,7 +237,9 @@
 				8F19F6D31E0C678D009F4002 /* ViewController.swift in Sources */,
 				8F1B02A11E0C796E008211AC /* GameScene.swift in Sources */,
 				8F36D46B1E0DDCEF00F5FE12 /* Ground.swift in Sources */,
+				8F3398551E156B9000834098 /* Dugtrio.swift in Sources */,
 				8F36D4691E0DDC5A00F5FE12 /* DoubleExtensions.swift in Sources */,
+				8F3398531E15661400834098 /* Diglett.swift in Sources */,
 				8F36D4671E0DDBF500F5FE12 /* IntExtensions.swift in Sources */,
 				8F2DB48B1E0C6A8A00E099F8 /* WindowController.swift in Sources */,
 				8F19F6D11E0C678D009F4002 /* AppDelegate.swift in Sources */,

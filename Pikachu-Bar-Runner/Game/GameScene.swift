@@ -88,7 +88,7 @@ class GameScene: SKScene {
 // MARK: - Extension for default methods
 extension GameScene {
     func debug(view: SKView) {
-        let debug           = true
+        let debug           = false
         view.showsPhysics   = debug
         view.showsFPS       = debug
         view.showsNodeCount = debug
@@ -132,6 +132,28 @@ extension GameScene {
 // MARK: - Extension for create methods
 extension GameScene {
     func createObstacle() {
+        
+        let random: Int = Int(Double.random(min: 0, max: 3))
+        
+        switch random {
+        case 0:
+            self.createBalloon()
+            break
+            
+        case 1:
+            self.createDiglett()
+            break
+            
+        case 2:
+            self.createDugtrio()
+            break
+            
+        default:
+            break
+        }
+    }
+    
+    func createBalloon() {
         let obstacle = Obstacle()
         obstacle.position.x = self.player.position.x + 1000
         obstacle.position.y = 8
@@ -140,11 +162,19 @@ extension GameScene {
     }
     
     func createDiglett() {
+        let diglett = Diglett()
+        diglett.position.x = self.player.position.x + 1000
+        diglett.position.y = 8
         
+        self.addChild(diglett)
     }
     
     func createDugtrio() {
+        let dugtrio = Dugtrio()
+        dugtrio.position.x = self.player.position.x + 1000
+        dugtrio.position.y = 8
         
+        self.addChild(dugtrio)
     }
 }
 

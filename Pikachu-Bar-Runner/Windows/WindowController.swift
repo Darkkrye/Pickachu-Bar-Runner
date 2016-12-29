@@ -27,7 +27,7 @@ class WindowController: NSWindowController {
         NotificationCenter.default.addObserver(self, selector: #selector(WindowController.changeToReplayButton), name: StaticDataProviders.replayButtonNotification, object: nil)
         
         // Setup audio player
-        self.setupAudioPlayer()
+//        self.setupAudioPlayer()
     }
 
 }
